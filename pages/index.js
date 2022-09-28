@@ -47,7 +47,7 @@ const Home = () => {
     <div className="flex">
       <Sidebar/>
       <DekstopNavbar/>
-      <div className="flex w-full mt-28 pl-36 gap-5 mx-4">
+      <div className="block lg:flex w-full mt-28 pl-0 lg:pl-36 gap-5 mx-4">
         <CardList/>
         <div className="flex flex-col w-full gap-y-9">
           

@@ -30,7 +30,7 @@ const category = [
     <>
       <div className="flex flex-col">
         <div className={styles.banner}>
-          <div className="flex flex-col px-4 lg:px-10 py-4 lg:py-16 gap-5">
+          <div className="flex flex-col px-4 lg:px-10 py-4 lg:py-16 gap-1 lg:gap-5">
             <p className="text-white font-semibold text-base lg:text-[40px]">
               One Stop NFT Marketplace
             </p>
@@ -42,7 +42,7 @@ const category = [
             <div className="flex gap-4 mt-5">
               <div className="bg-white py-2 px-5 rounded-lg cursor-pointer">
                 <p
-                  className="font-medium text-sm"
+                  className="font-medium text-[10px] lg:text-sm"
                   style={{
                     backgroundImage:
                       "linear-gradient(103.85deg, #6763FD 5.47%, #B84EF1 96.28%)",
@@ -55,7 +55,7 @@ const category = [
               </div>
               <div className="bg-white py-2 px-5 rounded-lg cursor-pointer">
                 <p
-                  className="font-medium text-sm"
+                  className="font-medium text-[10px] lg:text-sm"
                   style={{
                     backgroundImage:
                       "linear-gradient(103.85deg, #6763FD 5.47%, #B84EF1 96.28%)",
@@ -74,7 +74,7 @@ const category = [
           <div className="my-7">
             <p className="text-white text-xl font-semibold">Explore</p>
             <div className="h-20 my-4">
-                <div className="flex gap-4">
+                <div className="flex gap-4 overflow-x-auto">
                 {category?.map((value, index) => (
                     <button
                     key={index}
@@ -87,7 +87,7 @@ const category = [
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-6 lg:grid-cols-3 gap-x-72 gap-y-8 lg:gap-6 mb-8 overflow-x-auto lg:overflow-x-hidden">
             <div className="w-[280px] h-[336px] bg-[#262D3A] rounded-xl px-3 py-3 cursor-pointer" onClick={() => router.push('/')}>
               <div className="flex justify-between w-[257px] h-[160px] bg-[url(/assets/art1.png)] rounded-2xl">
                 <div className="flex items-center justify-center bg-[#c4c4c433] w-12 h-8 text-white rounded-xl ml-3 mt-3">
@@ -102,9 +102,9 @@ const category = [
                   />
                 </div>
                 
-                <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
+                {/* <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
                   Ends in: <Countdown date={Date.now() + 18108000} />
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between text-sm my-4">
                 <p className="text-white">Current Bid: </p>
@@ -170,9 +170,9 @@ const category = [
                     alt={"not found"}
                   />
                 </div>
-                <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
+                {/* <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
                   Ends in : 50h : 30m : 20s
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between text-sm my-4">
                 <p className="text-white">Current Bid: </p>
@@ -238,9 +238,9 @@ const category = [
                     alt={"not found"}
                   />
                 </div>
-                <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
+                {/* <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
                   Ends in : 50h : 30m : 20s
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between text-sm my-4">
                 <p className="text-white">Current Bid: </p>
@@ -306,9 +306,9 @@ const category = [
                     alt={"not found"}
                   />
                 </div>
-                <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
+                {/* <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
                   Ends in : 50h : 30m : 20s
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between text-sm my-4">
                 <p className="text-white">Current Bid: </p>
@@ -374,9 +374,9 @@ const category = [
                     alt={"not found"}
                   />
                 </div>
-                <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
+                {/* <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
                   Ends in : 50h : 30m : 20s
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between text-sm my-4">
                 <p className="text-white">Current Bid: </p>
@@ -442,9 +442,9 @@ const category = [
                     alt={"not found"}
                   />
                 </div>
-                <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
+                {/* <div className="absolute flex items-center justify-center w-[260px] h-7 text-white text-sm mt-[135px] bg-[#262d3acc]">
                   Ends in : 50h : 30m : 20s
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between text-sm my-4">
                 <p className="text-white">Current Bid: </p>

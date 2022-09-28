@@ -124,6 +124,7 @@
   .banner {
     width: 343px;
     height: 144px;
+    background-image: url(/assets/baner.svg), linear-gradient(103.85deg, #6763FD 5.47%, #B84EF1 96.28%);
   }
 }
 
