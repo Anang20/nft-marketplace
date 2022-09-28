@@ -47,14 +47,14 @@ const Home = () => {
     <div className="flex">
       <Sidebar/>
       <DekstopNavbar/>
-      <div className="block lg:flex w-full mt-28 pl-0 lg:pl-36 gap-5 mx-4">
+      <div className="block lg:flex w-full mt-28 pl-0 lg:pl-36 gap-5 px-2 mx-2">
         <CardList/>
         <div className="flex flex-col w-full gap-y-9">
           
           <div className="h-80 bg-[#262D3A] rounded-2xl px-5 py-5 text-white">
             <p className="text-xl font-semibold">Top Artist</p>
             {artist?.slice(0, 4).map((value, index) => (
-              <div key={index} className="flex items-center justify-between gap-2 pt-5">
+              <div key={index} className="flex items-center justify-between gap-2 pt-3">
                 <div className="font-semibold text-xl">{number++}.</div>
                 <div className="flex gap-2">
                   <Image src={'/assets//Ellipse.svg'} width={40} height={40} alt={'image'}/>

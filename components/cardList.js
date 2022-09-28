@@ -78,7 +78,7 @@ const category = [
                 {category?.map((value, index) => (
                     <button
                     key={index}
-                    className="bg-[#ffffff0d] mt-4 hover:bg-[#ffffff4d] hover:border-2 border-[#7B6FE6] py-3 px-6 rounded-3xl text-white"
+                    className="bg-[#ffffff0d] mt-4 hover:bg-[#ffffff4d] hover:border-2 border-[#7B6FE6] py-1 lg:py-3 px-6 rounded-3xl text-white text-sm lg:text-base"
                     >
                     {value?.name}
                     </button>

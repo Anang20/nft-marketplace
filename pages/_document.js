@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <body className="bg-[#1B1E2A]">
+      <body className="bg-[#1B1E2A]" style={{ fontFamily: 'Poppins, sans-serif', }}>
         <Main />
         <NextScript />
       </body>
